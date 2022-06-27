@@ -1,0 +1,1672 @@
+{
+  "contractName": "copyrightcontract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "licenses",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "copyright_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "imageHash",
+          "type": "string"
+        },
+        {
+          "internalType": "int256",
+          "name": "auth_id",
+          "type": "int256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "phashpart1",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "phashpart2",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_imageHash",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_phashpart1",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_phashpart2",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "int256",
+          "name": "_authid",
+          "type": "int256"
+        }
+      ],
+      "name": "newCopyright",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"licenses\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"copyright_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"imageHash\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"auth_id\",\"type\":\"int256\"},{\"internalType\":\"bytes32\",\"name\":\"phashpart1\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"phashpart2\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_imageHash\",\"type\":\"string\"},{\"internalType\":\"bytes32\",\"name\":\"_phashpart1\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_phashpart2\",\"type\":\"bytes32\"},{\"internalType\":\"int256\",\"name\":\"_authid\",\"type\":\"int256\"}],\"name\":\"newCopyright\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/copyrightcontract.sol\":\"copyrightcontract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/copyrightcontract.sol\":{\"keccak256\":\"0x34a742e0fb5d3cbd13646bea0ea49793784cac6485d17a8885fe43a1096ea3c8\",\"urls\":[\"bzz-raw://63bd7d291537babcea033bef530fc9464f678604ac796b85ba3a12fc16699521\",\"dweb:/ipfs/QmTg7ZVc2kLbyQr5bBn4NuEHN54VBcYjEE2nmqxPHLGL5E\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103e3806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063337908451461003b578063fbb3d39a146100fe575b600080fd5b6100676004803603602081101561005157600080fd5b81019080803590602001909291905050506101d7565b6040518086815260200180602001858152602001848152602001838152602001828103825286818151815260200191508051906020019080838360005b838110156100bf5780820151818401526020810190506100a4565b50505050905090810190601f1680156100ec5780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b6101d56004803603608081101561011457600080fd5b810190808035906020019064010000000081111561013157600080fd5b82018360208201111561014357600080fd5b8035906020019184600183028401116401000000008311171561016557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019092919080359060200190929190803590602001909291905050506102a5565b005b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102895780601f1061025e57610100808354040283529160200191610289565b820191906000526020600020905b81548152906001019060200180831161026c57829003601f168201915b5050505050908060020154908060030154908060040154905085565b6000808154809291906001019190505550600060016000805481526020019081526020016000209050848160010190805190602001906102e6929190610309565b508381600301819055508281600401819055508181600201819055505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061034a57805160ff1916838001178555610378565b82800160010185558215610378579182015b8281111561037757825182559160200191906001019061035c565b5b5090506103859190610389565b5090565b6103ab91905b808211156103a757600081600090555060010161038f565b5090565b9056fea265627a7a72315820572c65054323a53e88f891eaa3aaf4cfa2d45644103787a2fda58bedad47f6a364736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063337908451461003b578063fbb3d39a146100fe575b600080fd5b6100676004803603602081101561005157600080fd5b81019080803590602001909291905050506101d7565b6040518086815260200180602001858152602001848152602001838152602001828103825286818151815260200191508051906020019080838360005b838110156100bf5780820151818401526020810190506100a4565b50505050905090810190601f1680156100ec5780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b6101d56004803603608081101561011457600080fd5b810190808035906020019064010000000081111561013157600080fd5b82018360208201111561014357600080fd5b8035906020019184600183028401116401000000008311171561016557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019092919080359060200190929190803590602001909291905050506102a5565b005b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102895780601f1061025e57610100808354040283529160200191610289565b820191906000526020600020905b81548152906001019060200180831161026c57829003601f168201915b5050505050908060020154908060030154908060040154905085565b6000808154809291906001019190505550600060016000805481526020019081526020016000209050848160010190805190602001906102e6929190610309565b508381600301819055508281600401819055508181600201819055505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061034a57805160ff1916838001178555610378565b82800160010185558215610378579182015b8281111561037757825182559160200191906001019061035c565b5b5090506103859190610389565b5090565b6103ab91905b808211156103a757600081600090555060010161038f565b5090565b9056fea265627a7a72315820572c65054323a53e88f891eaa3aaf4cfa2d45644103787a2fda58bedad47f6a364736f6c63430005100032",
+  "sourceMap": "28:675:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:675:1;;;;;;;",
+  "deployedSourceMap": "28:675:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:675:1;;;;;;;;;;;;;;;;;;;;;;;;284:42;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;284:42:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;284:42:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;333:362;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;333:362:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;333:362:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;333:362:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;333:362:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;333:362:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;284:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;333:362::-;464:13;;:15;;;;;;;;;;;;;492:20;515:8;:23;524:13;;515:23;;;;;;;;;;;492:46;;566:10;551:1;:11;;:25;;;;;;;;;;;;:::i;:::-;;604:11;589:1;:12;;:26;;;;643:11;628:1;:12;;:26;;;;678:7;667:1;:9;;:18;;;;333:362;;;;;:::o;28:675::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity>=0.4.20;\r\n\r\ncontract copyrightcontract\r\n{   \r\n    struct copyright\r\n        {   uint copyright_id;\r\n            string  imageHash;\r\n            int  auth_id;\r\n            bytes32  phashpart1;\r\n            bytes32  phashpart2;\r\n        }\r\n    uint numCopyrights;\r\n     mapping(uint => copyright) public licenses;\r\n    function newCopyright(string memory _imageHash,bytes32  _phashpart1, bytes32  _phashpart2,int _authid) public \r\n    {   \r\n         numCopyrights++;\r\n          copyright  storage c = licenses[numCopyrights];\r\n          c.imageHash =  _imageHash;\r\n          c.phashpart1 = _phashpart1;\r\n          c.phashpart2 = _phashpart2;\r\n          c.auth_id =_authid;\r\n\r\n    }\r\n   \r\n}",
+  "sourcePath": "C:\\Users\\malav\\Downloads\\FinalYearProject-master\\FinalYearProject-master\\client\\src\\contracts\\copyrightcontract.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/copyrightcontract.sol",
+    "exportedSymbols": {
+      "copyrightcontract": [
+        97
+      ]
+    },
+    "id": 98,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 97,
+        "linearizedBaseContracts": [
+          97
+        ],
+        "name": "copyrightcontract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "copyrightcontract.copyright",
+            "id": 45,
+            "members": [
+              {
+                "constant": false,
+                "id": 36,
+                "name": "copyright_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 45,
+                "src": "96:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 35,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "96:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 38,
+                "name": "imageHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 45,
+                "src": "128:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 37,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 40,
+                "name": "auth_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 45,
+                "src": "160:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 39,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "160:3:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 42,
+                "name": "phashpart1",
+                "nodeType": "VariableDeclaration",
+                "scope": 45,
+                "src": "187:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 41,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "187:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "name": "phashpart2",
+                "nodeType": "VariableDeclaration",
+                "scope": 45,
+                "src": "221:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 43,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "221:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "copyright",
+            "nodeType": "StructDefinition",
+            "scope": 97,
+            "src": "66:186:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 47,
+            "name": "numCopyrights",
+            "nodeType": "VariableDeclaration",
+            "scope": 97,
+            "src": "258:18:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 46,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "258:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 51,
+            "name": "licenses",
+            "nodeType": "VariableDeclaration",
+            "scope": 97,
+            "src": "284:42:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_copyright_$45_storage_$",
+              "typeString": "mapping(uint256 => struct copyrightcontract.copyright)"
+            },
+            "typeName": {
+              "id": 50,
+              "keyType": {
+                "id": 48,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "292:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "284:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_copyright_$45_storage_$",
+                "typeString": "mapping(uint256 => struct copyrightcontract.copyright)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 49,
+                "name": "copyright",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 45,
+                "src": "300:9:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                  "typeString": "struct copyrightcontract.copyright"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "449:246:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "464:15:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 62,
+                      "name": "numCopyrights",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47,
+                      "src": "464:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "464:15:1"
+                },
+                {
+                  "assignments": [
+                    66
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 66,
+                      "name": "c",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 95,
+                      "src": "492:20:1",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                        "typeString": "struct copyrightcontract.copyright"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 65,
+                        "name": "copyright",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 45,
+                        "src": "492:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                          "typeString": "struct copyrightcontract.copyright"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 70,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 67,
+                      "name": "licenses",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51,
+                      "src": "515:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_copyright_$45_storage_$",
+                        "typeString": "mapping(uint256 => struct copyrightcontract.copyright storage ref)"
+                      }
+                    },
+                    "id": 69,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 68,
+                      "name": "numCopyrights",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47,
+                      "src": "524:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "515:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_copyright_$45_storage",
+                      "typeString": "struct copyrightcontract.copyright storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "492:46:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 75,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 71,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "551:1:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                          "typeString": "struct copyrightcontract.copyright storage pointer"
+                        }
+                      },
+                      "id": 73,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "imageHash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 38,
+                      "src": "551:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 74,
+                      "name": "_imageHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 53,
+                      "src": "566:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "551:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 76,
+                  "nodeType": "ExpressionStatement",
+                  "src": "551:25:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 81,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 77,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "589:1:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                          "typeString": "struct copyrightcontract.copyright storage pointer"
+                        }
+                      },
+                      "id": 79,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "phashpart1",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 42,
+                      "src": "589:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 80,
+                      "name": "_phashpart1",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 55,
+                      "src": "604:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "589:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 82,
+                  "nodeType": "ExpressionStatement",
+                  "src": "589:26:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 87,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 83,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "628:1:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                          "typeString": "struct copyrightcontract.copyright storage pointer"
+                        }
+                      },
+                      "id": 85,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "phashpart2",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 44,
+                      "src": "628:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 86,
+                      "name": "_phashpart2",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 57,
+                      "src": "643:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "628:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 88,
+                  "nodeType": "ExpressionStatement",
+                  "src": "628:26:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 89,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "667:1:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_copyright_$45_storage_ptr",
+                          "typeString": "struct copyrightcontract.copyright storage pointer"
+                        }
+                      },
+                      "id": 91,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "auth_id",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 40,
+                      "src": "667:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 92,
+                      "name": "_authid",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 59,
+                      "src": "678:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "667:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "ExpressionStatement",
+                  "src": "667:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "newCopyright",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53,
+                  "name": "_imageHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "355:24:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 52,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "355:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55,
+                  "name": "_phashpart1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "380:20:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 54,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "380:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 57,
+                  "name": "_phashpart2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "402:20:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 56,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "402:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 59,
+                  "name": "_authid",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "423:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 58,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "423:3:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "354:81:1"
+            },
+            "returnParameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "449:0:1"
+            },
+            "scope": 97,
+            "src": "333:362:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 98,
+        "src": "28:675:1"
+      }
+    ],
+    "src": "0:703:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/src/contracts/copyrightcontract.sol",
+      "exportedSymbols": {
+        "copyrightcontract": [
+          97
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".20"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            97
+          ],
+          "name": "copyrightcontract",
+          "scope": 98
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "copyrightcontract.copyright",
+              "name": "copyright",
+              "scope": 97,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "copyright_id",
+                  "scope": 45,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 35,
+                    "name": "ElementaryTypeName",
+                    "src": "96:4:1"
+                  }
+                ],
+                "id": 36,
+                "name": "VariableDeclaration",
+                "src": "96:17:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "imageHash",
+                  "scope": 45,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 37,
+                    "name": "ElementaryTypeName",
+                    "src": "128:6:1"
+                  }
+                ],
+                "id": 38,
+                "name": "VariableDeclaration",
+                "src": "128:17:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "auth_id",
+                  "scope": 45,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "int256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "int",
+                      "type": "int256"
+                    },
+                    "id": 39,
+                    "name": "ElementaryTypeName",
+                    "src": "160:3:1"
+                  }
+                ],
+                "id": 40,
+                "name": "VariableDeclaration",
+                "src": "160:12:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "phashpart1",
+                  "scope": 45,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 41,
+                    "name": "ElementaryTypeName",
+                    "src": "187:7:1"
+                  }
+                ],
+                "id": 42,
+                "name": "VariableDeclaration",
+                "src": "187:19:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "phashpart2",
+                  "scope": 45,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 43,
+                    "name": "ElementaryTypeName",
+                    "src": "221:7:1"
+                  }
+                ],
+                "id": 44,
+                "name": "VariableDeclaration",
+                "src": "221:19:1"
+              }
+            ],
+            "id": 45,
+            "name": "StructDefinition",
+            "src": "66:186:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "numCopyrights",
+              "scope": 97,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 46,
+                "name": "ElementaryTypeName",
+                "src": "258:4:1"
+              }
+            ],
+            "id": 47,
+            "name": "VariableDeclaration",
+            "src": "258:18:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "licenses",
+              "scope": 97,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct copyrightcontract.copyright)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct copyrightcontract.copyright)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 48,
+                    "name": "ElementaryTypeName",
+                    "src": "292:4:1"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "copyright",
+                      "referencedDeclaration": 45,
+                      "type": "struct copyrightcontract.copyright"
+                    },
+                    "id": 49,
+                    "name": "UserDefinedTypeName",
+                    "src": "300:9:1"
+                  }
+                ],
+                "id": 50,
+                "name": "Mapping",
+                "src": "284:26:1"
+              }
+            ],
+            "id": 51,
+            "name": "VariableDeclaration",
+            "src": "284:42:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "newCopyright",
+              "scope": 97,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_imageHash",
+                      "scope": 96,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 52,
+                        "name": "ElementaryTypeName",
+                        "src": "355:6:1"
+                      }
+                    ],
+                    "id": 53,
+                    "name": "VariableDeclaration",
+                    "src": "355:24:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_phashpart1",
+                      "scope": 96,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 54,
+                        "name": "ElementaryTypeName",
+                        "src": "380:7:1"
+                      }
+                    ],
+                    "id": 55,
+                    "name": "VariableDeclaration",
+                    "src": "380:20:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_phashpart2",
+                      "scope": 96,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 56,
+                        "name": "ElementaryTypeName",
+                        "src": "402:7:1"
+                      }
+                    ],
+                    "id": 57,
+                    "name": "VariableDeclaration",
+                    "src": "402:20:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_authid",
+                      "scope": 96,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 58,
+                        "name": "ElementaryTypeName",
+                        "src": "423:3:1"
+                      }
+                    ],
+                    "id": 59,
+                    "name": "VariableDeclaration",
+                    "src": "423:11:1"
+                  }
+                ],
+                "id": 60,
+                "name": "ParameterList",
+                "src": "354:81:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 61,
+                "name": "ParameterList",
+                "src": "449:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 47,
+                              "type": "uint256",
+                              "value": "numCopyrights"
+                            },
+                            "id": 62,
+                            "name": "Identifier",
+                            "src": "464:13:1"
+                          }
+                        ],
+                        "id": 63,
+                        "name": "UnaryOperation",
+                        "src": "464:15:1"
+                      }
+                    ],
+                    "id": 64,
+                    "name": "ExpressionStatement",
+                    "src": "464:15:1"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        66
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "c",
+                          "scope": 95,
+                          "stateVariable": false,
+                          "storageLocation": "storage",
+                          "type": "struct copyrightcontract.copyright",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "copyright",
+                              "referencedDeclaration": 45,
+                              "type": "struct copyrightcontract.copyright"
+                            },
+                            "id": 65,
+                            "name": "UserDefinedTypeName",
+                            "src": "492:9:1"
+                          }
+                        ],
+                        "id": 66,
+                        "name": "VariableDeclaration",
+                        "src": "492:20:1"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "struct copyrightcontract.copyright storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 51,
+                              "type": "mapping(uint256 => struct copyrightcontract.copyright storage ref)",
+                              "value": "licenses"
+                            },
+                            "id": 67,
+                            "name": "Identifier",
+                            "src": "515:8:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 47,
+                              "type": "uint256",
+                              "value": "numCopyrights"
+                            },
+                            "id": 68,
+                            "name": "Identifier",
+                            "src": "524:13:1"
+                          }
+                        ],
+                        "id": 69,
+                        "name": "IndexAccess",
+                        "src": "515:23:1"
+                      }
+                    ],
+                    "id": 70,
+                    "name": "VariableDeclarationStatement",
+                    "src": "492:46:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "imageHash",
+                              "referencedDeclaration": 38,
+                              "type": "string storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 66,
+                                  "type": "struct copyrightcontract.copyright storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 71,
+                                "name": "Identifier",
+                                "src": "551:1:1"
+                              }
+                            ],
+                            "id": 73,
+                            "name": "MemberAccess",
+                            "src": "551:11:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 53,
+                              "type": "string memory",
+                              "value": "_imageHash"
+                            },
+                            "id": 74,
+                            "name": "Identifier",
+                            "src": "566:10:1"
+                          }
+                        ],
+                        "id": 75,
+                        "name": "Assignment",
+                        "src": "551:25:1"
+                      }
+                    ],
+                    "id": 76,
+                    "name": "ExpressionStatement",
+                    "src": "551:25:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "phashpart1",
+                              "referencedDeclaration": 42,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 66,
+                                  "type": "struct copyrightcontract.copyright storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 77,
+                                "name": "Identifier",
+                                "src": "589:1:1"
+                              }
+                            ],
+                            "id": 79,
+                            "name": "MemberAccess",
+                            "src": "589:12:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 55,
+                              "type": "bytes32",
+                              "value": "_phashpart1"
+                            },
+                            "id": 80,
+                            "name": "Identifier",
+                            "src": "604:11:1"
+                          }
+                        ],
+                        "id": 81,
+                        "name": "Assignment",
+                        "src": "589:26:1"
+                      }
+                    ],
+                    "id": 82,
+                    "name": "ExpressionStatement",
+                    "src": "589:26:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "phashpart2",
+                              "referencedDeclaration": 44,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 66,
+                                  "type": "struct copyrightcontract.copyright storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 83,
+                                "name": "Identifier",
+                                "src": "628:1:1"
+                              }
+                            ],
+                            "id": 85,
+                            "name": "MemberAccess",
+                            "src": "628:12:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 57,
+                              "type": "bytes32",
+                              "value": "_phashpart2"
+                            },
+                            "id": 86,
+                            "name": "Identifier",
+                            "src": "643:11:1"
+                          }
+                        ],
+                        "id": 87,
+                        "name": "Assignment",
+                        "src": "628:26:1"
+                      }
+                    ],
+                    "id": 88,
+                    "name": "ExpressionStatement",
+                    "src": "628:26:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "int256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "auth_id",
+                              "referencedDeclaration": 40,
+                              "type": "int256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 66,
+                                  "type": "struct copyrightcontract.copyright storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 89,
+                                "name": "Identifier",
+                                "src": "667:1:1"
+                              }
+                            ],
+                            "id": 91,
+                            "name": "MemberAccess",
+                            "src": "667:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 59,
+                              "type": "int256",
+                              "value": "_authid"
+                            },
+                            "id": 92,
+                            "name": "Identifier",
+                            "src": "678:7:1"
+                          }
+                        ],
+                        "id": 93,
+                        "name": "Assignment",
+                        "src": "667:18:1"
+                      }
+                    ],
+                    "id": 94,
+                    "name": "ExpressionStatement",
+                    "src": "667:18:1"
+                  }
+                ],
+                "id": 95,
+                "name": "Block",
+                "src": "449:246:1"
+              }
+            ],
+            "id": 96,
+            "name": "FunctionDefinition",
+            "src": "333:362:1"
+          }
+        ],
+        "id": 97,
+        "name": "ContractDefinition",
+        "src": "28:675:1"
+      }
+    ],
+    "id": 98,
+    "name": "SourceUnit",
+    "src": "0:703:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1337": {
+      "events": {},
+      "links": {},
+      "address": "0x1B6095e094fd500554b75a9A97F59B7404eBFFcB",
+      "transactionHash": "0x0c591a61697654b12782089c649ed537a39333244d16bafa8e2f48fc7cdbeef2"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x532911dE0Ddf73a64F25F112b05183fccF402A35",
+      "transactionHash": "0x8bfb72f1a80184d9526581eddcae88632f00c5caf7b136062fa935e49a85aad7"
+    }
+  },
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-06-06T16:07:29.413Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

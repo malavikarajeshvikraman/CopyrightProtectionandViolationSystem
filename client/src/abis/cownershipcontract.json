@@ -1,0 +1,1422 @@
+{
+  "contractName": "cownershipcontract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "cownershiplicenses",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "cownership_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "imageHash",
+          "type": "string"
+        },
+        {
+          "internalType": "int256",
+          "name": "owner_id",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "user_id",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_imageHash",
+          "type": "string"
+        },
+        {
+          "internalType": "int256",
+          "name": "_owner_id",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "_user_id",
+          "type": "int256"
+        }
+      ],
+      "name": "newCownership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cownershiplicenses\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"cownership_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"imageHash\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"owner_id\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"user_id\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_imageHash\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"_owner_id\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"_user_id\",\"type\":\"int256\"}],\"name\":\"newCownership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/cownershipcontract.sol\":\"cownershipcontract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/cownershipcontract.sol\":{\"keccak256\":\"0x6b43bb36252e51b8b9a40e15516940be891e28094c81de5c6bbc30ce890e3a90\",\"urls\":[\"bzz-raw://f2f6ec669df4ec2d3874bc1021b2946a27a45b49a739813425d5f6bd2612de7a\",\"dweb:/ipfs/QmP9yapF4pp3jXxUXy8cZ4CZdQLbyH7w9F3PYJ63gNJhvS\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103c2806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806383ed014f1461003b578063d4eb2a891461010a575b600080fd5b6101086004803603606081101561005157600080fd5b810190808035906020019064010000000081111561006e57600080fd5b82018360208201111561008057600080fd5b803590602001918460018302840111640100000000831117156100a257600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190803590602001909291905050506101c6565b005b6101366004803603602081101561012057600080fd5b8101908080359060200190929190505050610220565b6040518085815260200180602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561018857808201518184015260208101905061016d565b50505050905090810190601f1680156101b55780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b6000808154809291906001019190505550600060016000805481526020019081526020016000209050828160020181905550818160030181905550838160010190805190602001906102199291906102e8565b5050505050565b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102d25780601f106102a7576101008083540402835291602001916102d2565b820191906000526020600020905b8154815290600101906020018083116102b557829003601f168201915b5050505050908060020154908060030154905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061032957805160ff1916838001178555610357565b82800160010185558215610357579182015b8281111561035657825182559160200191906001019061033b565b5b5090506103649190610368565b5090565b61038a91905b8082111561038657600081600090555060010161036e565b5090565b9056fea265627a7a723158206695e35fb599be7e1c90f28437f5638b4761f9f0cfe8fa74886a516adaec905a64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806383ed014f1461003b578063d4eb2a891461010a575b600080fd5b6101086004803603606081101561005157600080fd5b810190808035906020019064010000000081111561006e57600080fd5b82018360208201111561008057600080fd5b803590602001918460018302840111640100000000831117156100a257600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190803590602001909291905050506101c6565b005b6101366004803603602081101561012057600080fd5b8101908080359060200190929190505050610220565b6040518085815260200180602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561018857808201518184015260208101905061016d565b50505050905090810190601f1680156101b55780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b6000808154809291906001019190505550600060016000805481526020019081526020016000209050828160020181905550818160030181905550838160010190805190602001906102199291906102e8565b5050505050565b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102d25780601f106102a7576101008083540402835291602001916102d2565b820191906000526020600020905b8154815290600101906020018083116102b557829003601f168201915b5050505050908060020154908060030154905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061032957805160ff1916838001178555610357565b82800160010185558215610357579182015b8281111561035657825182559160200191906001019061033b565b5b5090506103649190610368565b5090565b61038a91905b8082111561038657600081600090555060010161036e565b5090565b9056fea265627a7a723158206695e35fb599be7e1c90f28437f5638b4761f9f0cfe8fa74886a516adaec905a64736f6c63430005100032",
+  "sourceMap": "28:597:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:597:2;;;;;;;",
+  "deployedSourceMap": "28:597:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:597:2;;;;;;;;;;;;;;;;;;;;;;;;308:309;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;308:309:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;308:309:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;308:309:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;308:309:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;308:309:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;248:53;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;248:53:2;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;248:53:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;308:309;412:14;;:16;;;;;;;;;;;;;441:20;464:18;:34;483:14;;464:34;;;;;;;;;;;441:57;;525:9;511:1;:10;;:23;;;;559:8;547:1;:9;;:20;;;;592:10;580:1;:11;;:22;;;;;;;;;;;;:::i;:::-;;308:309;;;;:::o;248:53::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;28:597::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity>=0.4.20;\r\n\r\ncontract cownershipcontract\r\n{   \r\n    struct cownership\r\n        {   uint cownership_id;\r\n            string  imageHash;\r\n            int  owner_id;\r\n            int  user_id;\r\n        }\r\n    uint numCownerships;\r\n     mapping(uint => cownership) public cownershiplicenses;\r\n    function newCownership(string memory _imageHash,int _owner_id,int _user_id) public \r\n    {   \r\n         numCownerships++;\r\n          cownership storage c = cownershiplicenses[numCownerships];\r\n          c.owner_id =  _owner_id;\r\n          c.user_id = _user_id;\r\n          c.imageHash=_imageHash;\r\n     \r\n    }\r\n   \r\n}",
+  "sourcePath": "C:\\Users\\malav\\Downloads\\FinalYearProject-master\\FinalYearProject-master\\client\\src\\contracts\\cownershipcontract.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/cownershipcontract.sol",
+    "exportedSymbols": {
+      "cownershipcontract": [
+        152
+      ]
+    },
+    "id": 153,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 99,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 152,
+        "linearizedBaseContracts": [
+          152
+        ],
+        "name": "cownershipcontract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "cownershipcontract.cownership",
+            "id": 108,
+            "members": [
+              {
+                "constant": false,
+                "id": 101,
+                "name": "cownership_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 108,
+                "src": "98:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 100,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "98:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 103,
+                "name": "imageHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 108,
+                "src": "131:17:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 102,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 105,
+                "name": "owner_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 108,
+                "src": "163:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 104,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:3:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 107,
+                "name": "user_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 108,
+                "src": "191:12:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 106,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "191:3:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "cownership",
+            "nodeType": "StructDefinition",
+            "scope": 152,
+            "src": "67:148:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 110,
+            "name": "numCownerships",
+            "nodeType": "VariableDeclaration",
+            "scope": 152,
+            "src": "221:19:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 109,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 114,
+            "name": "cownershiplicenses",
+            "nodeType": "VariableDeclaration",
+            "scope": 152,
+            "src": "248:53:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_cownership_$108_storage_$",
+              "typeString": "mapping(uint256 => struct cownershipcontract.cownership)"
+            },
+            "typeName": {
+              "id": 113,
+              "keyType": {
+                "id": 111,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "256:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "248:27:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_cownership_$108_storage_$",
+                "typeString": "mapping(uint256 => struct cownershipcontract.cownership)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 112,
+                "name": "cownership",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 108,
+                "src": "264:10:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_cownership_$108_storage_ptr",
+                  "typeString": "struct cownershipcontract.cownership"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 150,
+              "nodeType": "Block",
+              "src": "397:220:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 124,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "412:16:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 123,
+                      "name": "numCownerships",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 110,
+                      "src": "412:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 125,
+                  "nodeType": "ExpressionStatement",
+                  "src": "412:16:2"
+                },
+                {
+                  "assignments": [
+                    127
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 127,
+                      "name": "c",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 150,
+                      "src": "441:20:2",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_cownership_$108_storage_ptr",
+                        "typeString": "struct cownershipcontract.cownership"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 126,
+                        "name": "cownership",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 108,
+                        "src": "441:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_cownership_$108_storage_ptr",
+                          "typeString": "struct cownershipcontract.cownership"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 131,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 128,
+                      "name": "cownershiplicenses",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 114,
+                      "src": "464:18:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_cownership_$108_storage_$",
+                        "typeString": "mapping(uint256 => struct cownershipcontract.cownership storage ref)"
+                      }
+                    },
+                    "id": 130,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 129,
+                      "name": "numCownerships",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 110,
+                      "src": "483:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "464:34:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_cownership_$108_storage",
+                      "typeString": "struct cownershipcontract.cownership storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "441:57:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 136,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 132,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 127,
+                        "src": "511:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_cownership_$108_storage_ptr",
+                          "typeString": "struct cownershipcontract.cownership storage pointer"
+                        }
+                      },
+                      "id": 134,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "owner_id",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 105,
+                      "src": "511:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 135,
+                      "name": "_owner_id",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 118,
+                      "src": "525:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "511:23:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 137,
+                  "nodeType": "ExpressionStatement",
+                  "src": "511:23:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 142,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 138,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 127,
+                        "src": "547:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_cownership_$108_storage_ptr",
+                          "typeString": "struct cownershipcontract.cownership storage pointer"
+                        }
+                      },
+                      "id": 140,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "user_id",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 107,
+                      "src": "547:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 141,
+                      "name": "_user_id",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 120,
+                      "src": "559:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "547:20:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 143,
+                  "nodeType": "ExpressionStatement",
+                  "src": "547:20:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 148,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 144,
+                        "name": "c",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 127,
+                        "src": "580:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_cownership_$108_storage_ptr",
+                          "typeString": "struct cownershipcontract.cownership storage pointer"
+                        }
+                      },
+                      "id": 146,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "imageHash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 103,
+                      "src": "580:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 147,
+                      "name": "_imageHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 116,
+                      "src": "592:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "580:22:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 149,
+                  "nodeType": "ExpressionStatement",
+                  "src": "580:22:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 151,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "newCownership",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 121,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 116,
+                  "name": "_imageHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 151,
+                  "src": "331:24:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 115,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "331:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 118,
+                  "name": "_owner_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 151,
+                  "src": "356:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 117,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "356:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 120,
+                  "name": "_user_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 151,
+                  "src": "370:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 119,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "370:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "330:53:2"
+            },
+            "returnParameters": {
+              "id": 122,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "397:0:2"
+            },
+            "scope": 152,
+            "src": "308:309:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 153,
+        "src": "28:597:2"
+      }
+    ],
+    "src": "0:625:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/src/contracts/cownershipcontract.sol",
+      "exportedSymbols": {
+        "cownershipcontract": [
+          152
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".20"
+          ]
+        },
+        "id": 99,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            152
+          ],
+          "name": "cownershipcontract",
+          "scope": 153
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "cownershipcontract.cownership",
+              "name": "cownership",
+              "scope": 152,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "cownership_id",
+                  "scope": 108,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 100,
+                    "name": "ElementaryTypeName",
+                    "src": "98:4:2"
+                  }
+                ],
+                "id": 101,
+                "name": "VariableDeclaration",
+                "src": "98:18:2"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "imageHash",
+                  "scope": 108,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 102,
+                    "name": "ElementaryTypeName",
+                    "src": "131:6:2"
+                  }
+                ],
+                "id": 103,
+                "name": "VariableDeclaration",
+                "src": "131:17:2"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "owner_id",
+                  "scope": 108,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "int256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "int",
+                      "type": "int256"
+                    },
+                    "id": 104,
+                    "name": "ElementaryTypeName",
+                    "src": "163:3:2"
+                  }
+                ],
+                "id": 105,
+                "name": "VariableDeclaration",
+                "src": "163:13:2"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "user_id",
+                  "scope": 108,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "int256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "int",
+                      "type": "int256"
+                    },
+                    "id": 106,
+                    "name": "ElementaryTypeName",
+                    "src": "191:3:2"
+                  }
+                ],
+                "id": 107,
+                "name": "VariableDeclaration",
+                "src": "191:12:2"
+              }
+            ],
+            "id": 108,
+            "name": "StructDefinition",
+            "src": "67:148:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "numCownerships",
+              "scope": 152,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 109,
+                "name": "ElementaryTypeName",
+                "src": "221:4:2"
+              }
+            ],
+            "id": 110,
+            "name": "VariableDeclaration",
+            "src": "221:19:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "cownershiplicenses",
+              "scope": 152,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct cownershipcontract.cownership)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct cownershipcontract.cownership)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 111,
+                    "name": "ElementaryTypeName",
+                    "src": "256:4:2"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "cownership",
+                      "referencedDeclaration": 108,
+                      "type": "struct cownershipcontract.cownership"
+                    },
+                    "id": 112,
+                    "name": "UserDefinedTypeName",
+                    "src": "264:10:2"
+                  }
+                ],
+                "id": 113,
+                "name": "Mapping",
+                "src": "248:27:2"
+              }
+            ],
+            "id": 114,
+            "name": "VariableDeclaration",
+            "src": "248:53:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "newCownership",
+              "scope": 152,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_imageHash",
+                      "scope": 151,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 115,
+                        "name": "ElementaryTypeName",
+                        "src": "331:6:2"
+                      }
+                    ],
+                    "id": 116,
+                    "name": "VariableDeclaration",
+                    "src": "331:24:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_owner_id",
+                      "scope": 151,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 117,
+                        "name": "ElementaryTypeName",
+                        "src": "356:3:2"
+                      }
+                    ],
+                    "id": 118,
+                    "name": "VariableDeclaration",
+                    "src": "356:13:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_user_id",
+                      "scope": 151,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 119,
+                        "name": "ElementaryTypeName",
+                        "src": "370:3:2"
+                      }
+                    ],
+                    "id": 120,
+                    "name": "VariableDeclaration",
+                    "src": "370:12:2"
+                  }
+                ],
+                "id": 121,
+                "name": "ParameterList",
+                "src": "330:53:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 122,
+                "name": "ParameterList",
+                "src": "397:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 110,
+                              "type": "uint256",
+                              "value": "numCownerships"
+                            },
+                            "id": 123,
+                            "name": "Identifier",
+                            "src": "412:14:2"
+                          }
+                        ],
+                        "id": 124,
+                        "name": "UnaryOperation",
+                        "src": "412:16:2"
+                      }
+                    ],
+                    "id": 125,
+                    "name": "ExpressionStatement",
+                    "src": "412:16:2"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        127
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "c",
+                          "scope": 150,
+                          "stateVariable": false,
+                          "storageLocation": "storage",
+                          "type": "struct cownershipcontract.cownership",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "cownership",
+                              "referencedDeclaration": 108,
+                              "type": "struct cownershipcontract.cownership"
+                            },
+                            "id": 126,
+                            "name": "UserDefinedTypeName",
+                            "src": "441:10:2"
+                          }
+                        ],
+                        "id": 127,
+                        "name": "VariableDeclaration",
+                        "src": "441:20:2"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "struct cownershipcontract.cownership storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 114,
+                              "type": "mapping(uint256 => struct cownershipcontract.cownership storage ref)",
+                              "value": "cownershiplicenses"
+                            },
+                            "id": 128,
+                            "name": "Identifier",
+                            "src": "464:18:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 110,
+                              "type": "uint256",
+                              "value": "numCownerships"
+                            },
+                            "id": 129,
+                            "name": "Identifier",
+                            "src": "483:14:2"
+                          }
+                        ],
+                        "id": 130,
+                        "name": "IndexAccess",
+                        "src": "464:34:2"
+                      }
+                    ],
+                    "id": 131,
+                    "name": "VariableDeclarationStatement",
+                    "src": "441:57:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "int256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "owner_id",
+                              "referencedDeclaration": 105,
+                              "type": "int256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 127,
+                                  "type": "struct cownershipcontract.cownership storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 132,
+                                "name": "Identifier",
+                                "src": "511:1:2"
+                              }
+                            ],
+                            "id": 134,
+                            "name": "MemberAccess",
+                            "src": "511:10:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 118,
+                              "type": "int256",
+                              "value": "_owner_id"
+                            },
+                            "id": 135,
+                            "name": "Identifier",
+                            "src": "525:9:2"
+                          }
+                        ],
+                        "id": 136,
+                        "name": "Assignment",
+                        "src": "511:23:2"
+                      }
+                    ],
+                    "id": 137,
+                    "name": "ExpressionStatement",
+                    "src": "511:23:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "int256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "user_id",
+                              "referencedDeclaration": 107,
+                              "type": "int256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 127,
+                                  "type": "struct cownershipcontract.cownership storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 138,
+                                "name": "Identifier",
+                                "src": "547:1:2"
+                              }
+                            ],
+                            "id": 140,
+                            "name": "MemberAccess",
+                            "src": "547:9:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 120,
+                              "type": "int256",
+                              "value": "_user_id"
+                            },
+                            "id": 141,
+                            "name": "Identifier",
+                            "src": "559:8:2"
+                          }
+                        ],
+                        "id": 142,
+                        "name": "Assignment",
+                        "src": "547:20:2"
+                      }
+                    ],
+                    "id": 143,
+                    "name": "ExpressionStatement",
+                    "src": "547:20:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "imageHash",
+                              "referencedDeclaration": 103,
+                              "type": "string storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 127,
+                                  "type": "struct cownershipcontract.cownership storage pointer",
+                                  "value": "c"
+                                },
+                                "id": 144,
+                                "name": "Identifier",
+                                "src": "580:1:2"
+                              }
+                            ],
+                            "id": 146,
+                            "name": "MemberAccess",
+                            "src": "580:11:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 116,
+                              "type": "string memory",
+                              "value": "_imageHash"
+                            },
+                            "id": 147,
+                            "name": "Identifier",
+                            "src": "592:10:2"
+                          }
+                        ],
+                        "id": 148,
+                        "name": "Assignment",
+                        "src": "580:22:2"
+                      }
+                    ],
+                    "id": 149,
+                    "name": "ExpressionStatement",
+                    "src": "580:22:2"
+                  }
+                ],
+                "id": 150,
+                "name": "Block",
+                "src": "397:220:2"
+              }
+            ],
+            "id": 151,
+            "name": "FunctionDefinition",
+            "src": "308:309:2"
+          }
+        ],
+        "id": 152,
+        "name": "ContractDefinition",
+        "src": "28:597:2"
+      }
+    ],
+    "id": 153,
+    "name": "SourceUnit",
+    "src": "0:625:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1337": {
+      "events": {},
+      "links": {},
+      "address": "0xaDb5F3dD423820564bb72692D50C158483163795",
+      "transactionHash": "0xd32d87af11e333ebaa1b5d6380e41789d91edad5d11587486523fc88a4c85bd7"
+    }
+  },
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-06-06T16:07:29.415Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

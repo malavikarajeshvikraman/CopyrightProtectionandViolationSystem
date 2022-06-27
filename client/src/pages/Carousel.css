@@ -1,0 +1,39 @@
+.mt-8
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 750px !important;
+    justify-content: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-full
+{
+    width:80%;
+}
+
+.image
+{
+    height: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+.cursor-pointer
+{
+    margin-top: 50%;
+}
+
+.nice
+{
+    justify-content: center;
+
+}
