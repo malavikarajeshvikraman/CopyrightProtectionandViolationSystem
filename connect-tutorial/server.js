@@ -16,16 +16,16 @@ var Jimp = require("jimp");
 var Buffer=require("buffer");
 var compare=require("hamming-distance");
 
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      cb(null, 'images/')
-    },
-    filename: (req, file, cb) => {
-      cb(null, file.originalname)
-    },
-  })
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//       cb(null, 'images/')
+//     },
+//     filename: (req, file, cb) => {
+//       cb(null, file.originalname)
+//     },
+//   })
 
-const upload = multer({ storage: storage })
+// const upload = multer({ storage: storage })
 app.use(express.json());
 
 app.use(
